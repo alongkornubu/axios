@@ -19,7 +19,7 @@ window.onload = function(){
    var button = document.getElementById('get-data');
    setInterval(function(){
        button.click();
-   },5000);  // this will make it click again every 1000 miliseconds
+   },2500);  // this will make it click again every 1000 miliseconds
 };
 getBtn.addEventListener('click', getdata);
 
