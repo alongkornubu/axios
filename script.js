@@ -16,12 +16,11 @@ const getdata = () => { axios.get('https://server.duinocoin.com/users/alongkorn2
 });
 };
 window.onload = function(){
-   document.getElementById('get-data').click();
-   
- var scriptTag = document.createElement("script");
- scriptTag.src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js";
- document.getElementsByTagName("head")[0].appendChild(scriptTag);
-}
+   var button = document.getElementById('get-data');
+   setInterval(function(){
+       button.click();
+   },5000);  // this will make it click again every 1000 miliseconds
+};
 getBtn.addEventListener('click', getdata);
 
 
