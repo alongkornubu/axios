@@ -13,6 +13,7 @@ const getdata = () => { axios.get('https://server.duinocoin.com/users/alongkorn2
    getminer.innerHTML = response.data.result.miners[0].accepted;
    getdiff.innerHTML = response.data.result.miners[0].diff; 
    gethashrate.innerHTML = response.data.result.miners[0].hashrate;
+   
 });
 };
 window.onload = function(){
@@ -22,6 +23,8 @@ window.onload = function(){
    },5000);  // this will make it click again every 1000 miliseconds
 };
 getBtn.addEventListener('click', getdata);
+
+
 
 
 
